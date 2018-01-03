@@ -117,61 +117,10 @@ var data = [
 	},
 
 	{
-		"username": "Random Person",
-		"avatar": "url",
-		"following": ["Helvette", "Lore Buccellati", "Ichi"],
-		"followers": ["Helvette"],
-		"pages": ["Página 1", "Página 2", "Página 3"],
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit niam sit possimus officia dicta inventore.",
-		"location": "La Serena, Chile",
-		"joined": "17 de Diciembre, 2017",
-		"contact": {
-			"facebook": "#",
-			"instagram": "#",
-			"github": "#"
-		},
-		"post": [
-			{
-				"type": "review",
-				"text": "",
-				"tags": ["Lorem", "Manga", "Anime", "Review"],
-				"hour": ""
-			},
-			{
-				"type": "image",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "video",
-				"video": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "news",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "miscellaneous",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			}
-		]
-	},
-
-	{
 		"username": "Ñoña Escarlata",
 		"avatar": "url",
 		"following": ["Helvette", "Lore Buccellati", "Tropirai"],
-		"followers": ["Helvette", "Lore Buccellati", "Tropirai", "Random Person"],
+		"followers": ["Helvette", "Lore Buccellati", "Tropirai"],
 		"pages": ["Página 1", "Página 2", "Página 3"],
 		"description": "28. Wannabe writer. Sensocentrist. Skeptic. Libertarian. Fangirl.",
 		"location": "Santiago, Chile",
@@ -237,6 +186,57 @@ var data = [
 				"type": "review",
 				"text": "",
 				"tags": ["", "", "", "", ""],
+				"hour": ""
+			},
+			{
+				"type": "image",
+				"image": "url",
+				"text": "",
+				"tags": ["", "", "", "", ""],
+				"hour": ""
+			},
+			{
+				"type": "video",
+				"video": "url",
+				"text": "",
+				"tags": ["", "", "", "", ""],
+				"hour": ""
+			},
+			{
+				"type": "news",
+				"text": "",
+				"tags": ["", "", "", "", ""],
+				"hour": ""
+			},
+			{
+				"type": "miscellaneous",
+				"image": "url",
+				"text": "",
+				"tags": ["", "", "", "", ""],
+				"hour": ""
+			}
+		]
+	},
+
+	{
+		"username": "Random Person",
+		"avatar": "url",
+		"following": ["Helvette", "Lore Buccellati", "Ichi"],
+		"followers": ["Helvette"],
+		"pages": ["Página 1", "Página 2", "Página 3"],
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit niam sit possimus officia dicta inventore.",
+		"location": "La Serena, Chile",
+		"joined": "17 de Diciembre, 2017",
+		"contact": {
+			"facebook": "#",
+			"instagram": "#",
+			"github": "#"
+		},
+		"post": [
+			{
+				"type": "review",
+				"text": "",
+				"tags": ["Lorem", "Manga", "Anime", "Review"],
 				"hour": ""
 			},
 			{
@@ -412,12 +412,14 @@ var popular = [
 */
 var recomendados = [
 	{
+		"user": "Random Person"
 		"type": "review",
 		"text": "",
 		"tags": ["", "", "", "", ""],
 		"hour": ""
 	},
 	{
+		"user": "User Random"
 		"type": "image",
 		"image": "url",
 		"text": "",
@@ -425,7 +427,8 @@ var recomendados = [
 		"hour": ""
 	},
 	{
-		"type": "image",
+
+		"type": "Random User",
 		"image": "url",
 		"text": "",
 		"tags": ["", "", "", "", ""],
