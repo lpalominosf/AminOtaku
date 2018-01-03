@@ -20,15 +20,32 @@
     <img class="img-responsive hidden-xs hidden-sm text-center col-md-offset-2" src="assets/images/logotipo.png" alt="logo" style="width: 60%; height: 10%;">
     <form class="login">
       <h1 class="login-title">Inicia Sesión</h1>
-      <input type="text" class="login-input" placeholder="Email" autofocus>
-      <input type="password" class="login-input" placeholder="Password">
-      <input type="submit" value="Login" class="login-button">
+      <p>Nombre de Usuario</p>
+      <input type="text" id="login-input" autofocus>
+      <p>Password</p>
+      <input type="password" id="login-input">
+      <button class="btn btn-default login-button" type="button" class="login-button">Login</button>
       <p class="login-lost"><a href="">¿Olvidaste tu contraseña?</a></p>
       <h4 class="text-center register">¿Aún no tienes tu cuenta?</h2>
-      <input type="submit" value="Registrate" class="login-button" data-toggle="modal" data-target="#register">
-        <div></div>
+      <button type="button" class="btn btn-lg btn-default mt-25 login-button" data-toggle="modal" data-target="#register">Registrate</button>
     </form>
+    <div class="modal fade register-modal col-md-offset-3 col-xs-offset-1 col-sm-offset-1" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div id="register-modal">
+          <p>Nombre Usuario</p>
+          <input class="register-modal-input" type="text" name="username" placeholder="">
+          <p>Email</p>
+          <input class="register-modal-input" type="email" name="email" placeholder="">
+          <p>Password</p>
+          <input class="register-modal-input" type="password" name="password" placeholder="">
+          <p>Confirmar Password</p>
+          <input class="register-modal-input" type="password" name="confirmpassword" placeholder="">
+          <button class="btn btn-default login-button disabled">Crear Cuenta</button>
+        </div>
+      </div>
+    </div>
   </div>
+
   <!-- Sección inicio -->
   <section id="inicio">
     
@@ -38,7 +55,7 @@
     
   </section>
   <!-- Perfil otros usuarios -->
-  <section id="perfil-usuario">
+  <section id="perfil-usuarios">
     
   </section>
   <!-- Perfiles de Animes / Mangas -->
