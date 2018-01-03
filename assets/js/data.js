@@ -15,11 +15,11 @@
 var data = [
 	{
 		"username": "Lore Buccellati",
-		"avatar": "url",
-		"following": ["Helvette", "Liz"],
-		"followers": ["Helvette", "Liz"],
+		"avatar": "<img src='assets/images/avatar-lore.jpg'>",
+		"following": ["Helvette", "Ichi"],
+		"followers": ["Helvette", "Ichi"],
 		"pages": ["JJBA", "FMA:B"],
-		"description": "",
+		"description": "Nombre: Lore <br> Apodo: Aya <br> Edad: 28 ewe <br> Anime/s Favorito/s: Jojo's, FMA, SNK, Dragon Ball",
 		"location": "Santiago, Chile",
 		"joined": "24 de Septiembre 2017",
 		"contact": {
@@ -32,7 +32,7 @@ var data = [
 				"type": "review",
 				"rating": "5/5"
 				"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sunt saepe vel atque, minus nemo qui eveniet aliquam itaque eligendi impedit perspiciatis corrupti. Blanditiis esse tempora necessitatibus, vitae obcaecati nam.",
-				"tags": ["JJBA", "Josuke", "Anime", "Jojo's", "Bizarre", "Adventure"],
+				"tags": ["JJBA", "Josuke", "Anime", "Jojo's", "Bizarre", "Adventure", "Review"],
 				"hour": "14:35"
 			},
 			{
@@ -66,18 +66,18 @@ var data = [
 	},
 
 	{
-		"username": "Liz",
+		"username": "Ichi",
 		"avatar": "url",
-		"following": ["Persona 1", "Persona 3"],
-		"followers": ["Persona 1", "Persona 3"],
-		"pages": ["Página 1", "Página 2", "Página 3"],
-		"description": "",
-		"location": "",
-		"joined": "",
+		"following": ["Helvette", "Lore Buccellati", "Random Person"],
+		"followers": ["Helvette", "Lore Buccellati", "Random Person"],
+		"pages": ["Fools"],
+		"description": "Nombre: Liss <br> Apodo: Ichi <br> Edad:28 ewe <br> Me gusta: manga, xxx, yaoi <br> Anime/s Favorito/s: Super Lovers <br> Manga/s Favorito/s: Fools",
+		"location": "Santiago, Chile",
+		"joined": "12 de Abril, 2017",
 		"contact": {
-			"facebook": "url",
-			"instagram": "url",
-			"github": "url"
+			"facebook": "http://www.facebook.com/",
+			"instagram": "http://www.instagram.com/",
+			"github": "http://www.github.com/"
 		},
 		"post": [
 			{
@@ -117,18 +117,69 @@ var data = [
 	},
 
 	{
-		"username": "Persona 3",
+		"username": "Random Person",
 		"avatar": "url",
-		"following": ["Persona 1", "Persona 2"],
-		"followers": ["Persona 1", "Persona 2"],
+		"following": ["Helvette", "Lore Buccellati", "Ichi"],
+		"followers": ["Helvette"],
 		"pages": ["Página 1", "Página 2", "Página 3"],
-		"description": "",
-		"location": "",
-		"joined": "",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit niam sit possimus officia dicta inventore.",
+		"location": "La Serena, Chile",
+		"joined": "17 de Diciembre, 2017",
 		"contact": {
-			"facebook": "url",
-			"instagram": "url",
-			"github": "url"
+			"facebook": "#",
+			"instagram": "#",
+			"github": "#"
+		},
+		"post": [
+			{
+				"type": "review",
+				"text": "",
+				"tags": ["Lorem", "Manga", "Anime", "Review"],
+				"hour": ""
+			},
+			{
+				"type": "image",
+				"image": "url",
+				"text": "",
+				"tags": ["", "", "", "", ""],
+				"hour": ""
+			},
+			{
+				"type": "video",
+				"video": "url",
+				"text": "",
+				"tags": ["", "", "", "", ""],
+				"hour": ""
+			},
+			{
+				"type": "news",
+				"text": "",
+				"tags": ["", "", "", "", ""],
+				"hour": ""
+			},
+			{
+				"type": "miscellaneous",
+				"image": "url",
+				"text": "",
+				"tags": ["", "", "", "", ""],
+				"hour": ""
+			}
+		]
+	},
+
+	{
+		"username": "Ñoña Escarlata",
+		"avatar": "url",
+		"following": ["Helvette", "Lore Buccellati", "Tropirai"],
+		"followers": ["Helvette", "Lore Buccellati", "Tropirai", "Random Person"],
+		"pages": ["Página 1", "Página 2", "Página 3"],
+		"description": "28. Wannabe writer. Sensocentrist. Skeptic. Libertarian. Fangirl.",
+		"location": "Santiago, Chile",
+		"joined": "1 de Enero, 2018",
+		"contact": {
+			"facebook": "https://www.facebook.com/VToriRodriguez",
+			"instagram": "https://www.instagram.com/skepticalpony",
+			"github": "https://github.com/malditoprotozoo"
 		},
 		"post": [
 			{
@@ -168,69 +219,18 @@ var data = [
 	},
 
 	{
-		"username": "Persona 4",
+		"username": "Tropirai",
 		"avatar": "url",
-		"following": ["Persona 1", "Persona 2"],
-		"followers": ["Persona 1", "Persona 2"],
+		"following": ["Helvette", "Ñoña Escarlata"],
+		"followers": ["Helvette", "Ñoña Escarlata", "Random Person"],
 		"pages": ["Página 1", "Página 2", "Página 3"],
-		"description": "",
-		"location": "",
-		"joined": "",
+		"description": "Raimundo Lisboa Prádenas, 24 años. Videojuegos, Hardware, Neopets, Pokémon, Gatos.",
+		"location": "Santiago, Chile",
+		"joined": "2 de Enero, 2018",
 		"contact": {
-			"facebook": "url",
-			"instagram": "url",
-			"github": "url"
-		},
-		"post": [
-			{
-				"type": "review",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "image",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "video",
-				"video": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "news",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "miscellaneous",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			}
-		]
-	},
-
-	{
-		"username": "Persona 5",
-		"avatar": "url",
-		"following": ["Persona 1", "Persona 2"],
-		"followers": ["Persona 1", "Persona 2"],
-		"pages": ["Página 1", "Página 2", "Página 3"],
-		"description": "",
-		"location": "",
-		"joined": "",
-		"contact": {
-			"facebook": "url",
-			"instagram": "url",
-			"github": "url"
+			"facebook": "http://www.facebook.com/",
+			"instagram": "http://www.instagram.com/",
+			"github": "#"
 		},
 		"post": [
 			{
@@ -276,17 +276,17 @@ var data = [
 
 var user = {
 	"username": "Helvette",
-	"avatar": "url",
-	"following": ["persona 1", "persona 2", "persona 3"],
-	"followers": ["persona 2", "persona 4", "persona 5"],
-	"pages": ["página 1", "página 2", "página 3"],
-	"description": "",
-	"location": "",
-	"joined": "",
+	"avatar": "<img src= 'assets/images/avatar-helvette.jpg'>",
+	"following": ["Lore Buccellati", "Ichi", "Ñoña Escarlata"],
+	"followers": ["Lore Buccellati", "Ichi", "Ñoña Escarlata", "Random Person"],
+	"pages": ["JJBA", "FMA:B"],
+	"description": "Hi! I'm a coder in progress, I love art, technology and 2D guys. I'm shy but i hope we can be friends anyway :3",
+	"location": "Santiago, Chile",
+	"joined": "18 de Octubre 2017",
 	"contact": {
-		"facebook": "url",
-		"instagram": "url",
-		"github": "url"
+		"facebook": "http://www.facebook.com/intothev0id/",
+		"instagram": "http://www.instagram.com/ihaveahybridheart",
+		"github": "http://www.github.com/Helvette"
 	},
 	"post": [
 		{
@@ -379,3 +379,56 @@ for (var j = 0; j < data.length; j++){
 } 
 
 */
+
+
+/*
+** Datos para la sección de populares del día
+*/
+var popular = [
+		{
+			"type": "review",
+			"text": "",
+			"tags": ["", "", "", "", ""],
+			"hour": ""
+		},
+		{
+			"type": "image",
+			"image": "url",
+			"text": "",
+			"tags": ["", "", "", "", ""],
+			"hour": ""
+		},
+		{
+			"type": "image",
+			"image": "url",
+			"text": "",
+			"tags": ["", "", "", "", ""],
+			"hour": ""
+		}
+]
+
+/*
+** Datos para los recomendados según tus gustos
+*/
+var recomendados = [
+	{
+		"type": "review",
+		"text": "",
+		"tags": ["", "", "", "", ""],
+		"hour": ""
+	},
+	{
+		"type": "image",
+		"image": "url",
+		"text": "",
+		"tags": ["", "", "", "", ""],
+		"hour": ""
+	},
+	{
+		"type": "image",
+		"image": "url",
+		"text": "",
+		"tags": ["", "", "", "", ""],
+		"hour": ""
+	}
+]
