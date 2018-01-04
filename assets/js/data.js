@@ -17,8 +17,7 @@ var data = [
 		"username": "Lore Buccellati",
 		"avatar": "<img src='assets/images/avatar-lore.jpg'>",
 		"following": ["Helvette", "Ichi"],
-		"followers": ["Helvette", "Ichi"],
-		"pages": ["JJBA", "FMA:B"],
+		"followers": ["Helvette", "Ichi", "Ñoña Escarlata"],
 		"description": "Nombre: Lore <br> Apodo: Aya <br> Edad: 28 ewe <br> Anime/s Favorito/s: Jojo's, FMA, SNK, Dragon Ball",
 		"location": "Santiago, Chile",
 		"joined": "24 de Septiembre 2017",
@@ -30,7 +29,7 @@ var data = [
 		"post": [
 			{
 				"type": "review",
-				"rating": "5/5"
+				"rating": "5/5",
 				"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sunt saepe vel atque, minus nemo qui eveniet aliquam itaque eligendi impedit perspiciatis corrupti. Blanditiis esse tempora necessitatibus, vitae obcaecati nam.",
 				"tags": ["JJBA", "Josuke", "Anime", "Jojo's", "Bizarre", "Adventure", "Review"],
 				"hour": "14:35"
@@ -42,25 +41,13 @@ var data = [
 				"tags": ["Josuke", "JJBA", "Fanart", "Draw", "AutorName"],
 				"hour": "16:20"
 			},
-			{
-				"type": "video",
-				"video": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
+
 			{
 				"type": "news",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "miscellaneous",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"text": "El manga de Shingeki ya supera los 71 millones de copias ;u;! <br> link:",
+				"link": "https://www.koi-nya.net/2018/01/02/manga-shingeki-no-kyojin-supera-los-71-millones-copias/",
+				"tags": ["SnK", "ShingekiNoKyojin", "Manga", "Shonen", "Anime"],
+				"hour": "17:47"
 			}
 		]
 	},
@@ -68,60 +55,45 @@ var data = [
 	{
 		"username": "Ichi",
 		"avatar": "url",
-		"following": ["Helvette", "Lore Buccellati", "Random Person"],
-		"followers": ["Helvette", "Lore Buccellati", "Random Person"],
-		"pages": ["Fools"],
+		"following": ["Helvette", "Lore Buccellati"],
+		"followers": ["Helvette", "Lore Buccellati"],
 		"description": "Nombre: Liss <br> Apodo: Ichi <br> Edad:28 ewe <br> Me gusta: manga, xxx, yaoi <br> Anime/s Favorito/s: Super Lovers <br> Manga/s Favorito/s: Fools",
 		"location": "Santiago, Chile",
 		"joined": "12 de Abril, 2017",
 		"contact": {
 			"facebook": "http://www.facebook.com/",
 			"instagram": "http://www.instagram.com/",
-			"github": "http://www.github.com/"
+			"github": "http://www.github.com/dime3ichig0"
 		},
 		"post": [
 			{
-				"type": "review",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
 				"type": "image",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "video",
-				"video": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "news",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"image": "<img src='assets/images/ai-no-kusabi.jpg'>",
+				"text": "Kyaaa~!",
+				"tags": ["Anime", "Yaoi", "AoNoKusabi", "Novela", "Ova"],
+				"hour": "08:03"
 			},
 			{
 				"type": "miscellaneous",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"text": "Si eres fujoshi, visita mi IG!!! Tengo mucho material para ti <3",
+				"tags": ["Yaoi", "Manga", "Instagram", "Fujoshi"],
+				"hour": "10:51"
+			},
+			{
+				"type": "image",
+				"image": "<img src='assets/images/fanart-ichi.jpg'>",
+				"text": "Dibujo hecho por mí ^^",
+				"tags": ["Fanart", "ByMe", "Ichi"],
+				"hour": "13:27"
 			}
 		]
 	},
 
 	{
 		"username": "Ñoña Escarlata",
-		"avatar": "url",
+		"avatar": "<img src='assets/images/avatar-tori.jpg'>",
 		"following": ["Helvette", "Lore Buccellati", "Tropirai"],
-		"followers": ["Helvette", "Lore Buccellati", "Tropirai"],
-		"pages": ["Página 1", "Página 2", "Página 3"],
+		"followers": ["Helvette", "Tropirai"],
 		"description": "28. Wannabe writer. Sensocentrist. Skeptic. Libertarian. Fangirl.",
 		"location": "Santiago, Chile",
 		"joined": "1 de Enero, 2018",
@@ -132,47 +104,34 @@ var data = [
 		},
 		"post": [
 			{
-				"type": "review",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
 				"type": "image",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"image": "<img src='assets/images/cat-gif.gif'>",
+				"text": "Miau~",
+				"tags": ["Cat", "Gif", "Anime", "AoHaruRide", "Shoujo"],
+				"hour": "00:12"
 			},
 			{
 				"type": "video",
-				"video": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"video": "<img src='assets/images/video.jpg'>",
+				"text": "Que buen opening.",
+				"tags": ["JJBA", "JojosBizarreAdventure", "Anime", "Shonen", "Video"],
+				"hour": "01:28"
 			},
 			{
-				"type": "news",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "miscellaneous",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"type": "image",
+				"image":"<img src='assets/images/cowboy-bebop.jpg",
+				"text": "Spike FTW",
+				"tags": ["CowboyBebop", "Anime", "sci-fi", "Screenshot"],
+				"hour": "09:13"
 			}
 		]
 	},
 
 	{
 		"username": "Tropirai",
-		"avatar": "url",
+		"avatar": "<img src='assets/images/avatar-tropirai.jpg",
 		"following": ["Helvette", "Ñoña Escarlata"],
-		"followers": ["Helvette", "Ñoña Escarlata", "Random Person"],
-		"pages": ["Página 1", "Página 2", "Página 3"],
+		"followers": ["Helvette", "Ñoña Escarlata"],
 		"description": "Raimundo Lisboa Prádenas, 24 años. Videojuegos, Hardware, Neopets, Pokémon, Gatos.",
 		"location": "Santiago, Chile",
 		"joined": "2 de Enero, 2018",
@@ -183,47 +142,34 @@ var data = [
 		},
 		"post": [
 			{
-				"type": "review",
+				"type": "image",
+				"image":"<img src='assets/images/fanart-pokemon.jpg'>",
 				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"tags": ["Pokemon", "Fanart", "Cute", "Anime", "Sandshrew"],
+				"hour": "01:37"
 			},
 			{
 				"type": "image",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"image": "<img src='assets/images/meme-diavolo.jpg'>",
+				"text": "xD!",
+				"tags": ["JJBA", "Anime", "Meme", "Funny", "lol"],
+				"hour": "11:37"
 			},
 			{
-				"type": "video",
-				"video": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "news",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "miscellaneous",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"type": "image",
+				"image": "<img src='assets/images/meme-diavolo.jpg'>",
+				"text": "uwu",
+				"tags": ["Pokemon", "Tentacool", "Tentacruel", "Anime", "Funny", "Cute"],
+				"hour": "22:43"
 			}
 		]
 	},
 
 	{
 		"username": "Random Person",
-		"avatar": "url",
-		"following": ["Helvette", "Lore Buccellati", "Ichi"],
-		"followers": ["Helvette"],
-		"pages": ["Página 1", "Página 2", "Página 3"],
+		"avatar": "<img src='assets/images/avatar-random.jpg'>",
+		"following": [],
+		"followers": [],
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit niam sit possimus officia dicta inventore.",
 		"location": "La Serena, Chile",
 		"joined": "17 de Diciembre, 2017",
@@ -234,37 +180,28 @@ var data = [
 		},
 		"post": [
 			{
+				"username":"Random Person",
 				"type": "review",
-				"text": "",
-				"tags": ["Lorem", "Manga", "Anime", "Review"],
-				"hour": ""
+				"rating": "4/5",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis explicabo temporibus eligendi vero eius sed quidem rem error sunt cupiditate magni enim quas necessitatibus iure facere, totam unde, possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illo illum laborum molestiae minus voluptate nobis nihil fugiat, sit aut hic eaque quisquam obcaecati sapiente est, saepe aperiam dolores explicabo!",
+			"tags": ["HxH", "HunterxHunter", "Anime"],
+			"hour": "11:00"
 			},
 			{
+				"username":"Random Person",
 				"type": "image",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"image": "<img src='assets/images/oyasumipunpun.jpg'>",
+				"text": "I love it!",
+				"tags": ["Manga", "OPP", "OyasumiPunpun", "InioAsano", "Fanart"],
+				"hour": "13:05"
 			},
 			{
-				"type": "video",
-				"video": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "news",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
-			},
-			{
-				"type": "miscellaneous",
-				"image": "url",
-				"text": "",
-				"tags": ["", "", "", "", ""],
-				"hour": ""
+				"username":"Random Person",
+				"type": "image",
+				"image": "<img src='assets/images/meme-one-punch'>",
+				"text": "HAHAHAH omggg, nice one",
+				"tags": ["Anime", "OPM", "OnePunchMan", "Meme", "Funny"],
+				"hour": "13:18"
 			}
 		]
 	}
@@ -277,10 +214,10 @@ var data = [
 var user = {
 	"username": "Helvette",
 	"avatar": "<img src= 'assets/images/avatar-helvette.jpg'>",
-	"following": ["Lore Buccellati", "Ichi", "Ñoña Escarlata"],
-	"followers": ["Lore Buccellati", "Ichi", "Ñoña Escarlata", "Random Person"],
-	"pages": ["JJBA", "FMA:B"],
-	"description": "Hi! I'm a coder in progress, I love art, technology and 2D guys. I'm shy but i hope we can be friends anyway :3",
+	"following": ["Lore Buccellati", "Ichi", "Ñoña Escarlata","Tropirai"],
+	"followers": ["Lore Buccellati", "Ichi", "Ñoña Escarlata", "Tropirai"],
+	"pages": ["JJBA"],
+	"description": "Hi! I'm a coder in progress. I love art, technology and 2D guys. I'm shy but i hope we can be friends anyway :3",
 	"location": "Santiago, Chile",
 	"joined": "18 de Octubre 2017",
 	"contact": {
@@ -291,39 +228,39 @@ var user = {
 	"post": [
 		{
 			"type": "review",
-			"text": "",
-			"tags": ["", "", "", "", ""],
-			"hour": ""
+			"rating":"5/5",
+			"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iusto dignissimos praesentium, possimus velit soluta, officiis laboriosam distinctio cupiditate. Sed eius aspernatur sit sequi culpa neque officia, eveniet nostrum itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi quam dolorem perferendis adipisci officia ea voluptatibus ab eum inventore, sequi nam laborum, corporis nihil. Odit qui molestiae facere, ipsum. ",
+			"tags": ["FMA:B", "FullmetalAlchemistBrotherhood", "Shonen", "Anime", "Top5anime"],
+			"hour": "11:08"
 		},
 		{
 			"type": "image",
-			"image": "url",
-			"text": "",
-			"tags": ["", "", "", "", ""],
-			"hour": ""
+			"image": "<img src='assets/images/chihayafuru.png'>",
+			"text": "Mejor pareja o mejor pareja uwu. Ni ahí con Arata.",
+			"tags": ["Chihayafuru", "Karuta", "Manga", "Shoujo", "Sports"],
+			"hour": "17:43"
 		},
+
 		{
-			"type": "video",
-			"video": "url",
+			"type": "image",
+			"image": "<img src='assets/images/evangelion-gif.gif'>",
 			"text": "",
-			"tags": ["", "", "", "", ""],
-			"hour": ""
-		},
-		{
-			"type": "news",
-			"text": "",
-			"tags": ["", "", "", "", ""],
-			"hour": ""
-		},
-		{
-			"type": "miscellaneous",
-			"image": "url",
-			"text": "",
-			"tags": ["", "", "", "", ""],
-			"hour": ""
+			"tags": ["Evangelion", "Anime", "Shonen", "Gif"],
+			"hour": "21:11"
 		}
 	]
 }
+
+
+var pages = [
+ {
+	"name":"Jojo's Bizzare Adventure",
+	"sub": "Anime, Manga",
+	"image": "<img src='assets/images/jojo-bizarre-adventure'>",
+	"created":"Hirohiko Araki",
+	"categories": ["Shonen", "Seinen", "Sobrenatural"]
+ }
+]
 
 /*
 for (var i = 0; i < data.length; i++){
@@ -333,7 +270,6 @@ for (var i = 0; i < data.length; i++){
 	console.log(data[i].following.length);
 	console.log(data[i].followers);
 	console.log(data[i].followers.length)
-	console.log(data[i].pages);
 	console.log(data[i].contact["facebook"]);
 	console.log(data[i].contact["instagram"]);
 	console.log(data[i].contact["github"]);
@@ -385,26 +321,30 @@ for (var j = 0; j < data.length; j++){
 ** Datos para la sección de populares del día
 */
 var popular = [
-		{
-			"type": "review",
-			"text": "",
-			"tags": ["", "", "", "", ""],
-			"hour": ""
-		},
-		{
-			"type": "image",
-			"image": "url",
-			"text": "",
-			"tags": ["", "", "", "", ""],
-			"hour": ""
-		},
-		{
-			"type": "image",
-			"image": "url",
-			"text": "",
-			"tags": ["", "", "", "", ""],
-			"hour": ""
-		}
+	{
+		"username":"Random Person",
+		"type": "review",
+		"rating": "4/5",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis explicabo temporibus eligendi vero eius sed quidem rem error sunt cupiditate magni enim quas necessitatibus iure facere, totam unde, possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illo illum laborum molestiae minus voluptate nobis nihil fugiat, sit aut hic eaque quisquam obcaecati sapiente est, saepe aperiam dolores explicabo!",
+		"tags": ["HxH", "HunterxHunter", "Anime"],
+		"hour": "11:00"
+	},
+	{
+		"username":"Random Person",
+		"type": "image",
+		"image": "<img src='assets/images/oyasumipunpun.jpg'>",
+		"text": "I love it!",
+		"tags": ["Manga", "OPP", "OyasumiPunpun", "InioAsano", "Fanart"],
+		"hour": "13:05"
+	},
+	{
+		"username":"Random Person",
+		"type": "image",
+		"image": "<img src='assets/images/meme-one-punch'>",
+		"text": "HAHAHAH omggg, nice one",
+		"tags": ["Anime", "OPM", "OnePunchMan", "Meme", "Funny"],
+		"hour": "13:18"
+	}
 ]
 
 /*
@@ -412,26 +352,28 @@ var popular = [
 */
 var recomendados = [
 	{
-		"user": "Random Person"
-		"type": "review",
-		"text": "",
-		"tags": ["", "", "", "", ""],
-		"hour": ""
-	},
-	{
-		"user": "User Random"
+		"user": "User Random",
 		"type": "image",
-		"image": "url",
-		"text": "",
-		"tags": ["", "", "", "", ""],
-		"hour": ""
+		"image": "<img src='assets/images/the-lady-and-her-butler.jpg'>",
+		"text": "I love this new josei manhwa :)!",
+		"tags": ["TLAHB", "TheLadyAndHerButler", "Manga", "Manhwa", "Josei", "Jade"],
+		"hour": "16:58"
+	},
+
+	{
+		"user": "Random Person",
+		"type": "review",
+		"rating": "2/5",
+		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, fuga, asperiores. Placeat pariatur, aspernatur ullam tempore repellendus tempora assumenda recusandae tenetur sunt quos a doloribus explicabo inventore, voluptatem accusamus aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nihil atque ducimus debitis nulla expedita pariatur. Dolorem vero repudiandae, delectus incidunt tenetur dolores fuga, reiciendis, magnam iusto voluptatum assumenda natus.",
+		"tags": ["SAO", "SwordArtOnline", "Anime", "Garbage", "Fanservice"],
+		"hour": "18:30"
 	},
 	{
 
 		"type": "Random User",
-		"image": "url",
-		"text": "",
-		"tags": ["", "", "", "", ""],
-		"hour": ""
+		"image": "<img src='assets/images/serial-experiment-lain.jpg'>",
+		"text": "This anime is really awesome.",
+		"tags": ["SerialExperimentLain", "Anime", "Indie", "Old", "Philosophy"],
+		"hour": "18:52"
 	}
 ]
