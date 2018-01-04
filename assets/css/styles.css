@@ -1,8 +1,5 @@
 /*#ca06e7 hover*/
 
-body{
-  background: #2d343d;
-}
 
 /*Formulario*/
 .login{
@@ -114,13 +111,14 @@ input[type=text]{
   -moz-box-sizing: border-box;
 }
 
-.fa-times{
-  font-size: 20px;
-}
-
-.fa-times:hover{
-  color: #d1caca;
-  cursor: pointer;
+/*Slider*/
+.fader{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -99;
 }
 
 
