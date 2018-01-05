@@ -12,69 +12,301 @@
   <link rel="icon" href="assets/images/iconitodelapestañita.jpeg" type="image/png">
   <!-- Fontawesome -->
   <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCGYjCUFhVY86xIz3oQtmnyF0vR8YH7krg",
+    authDomain: "aminotaku-9238d.firebaseapp.com",
+    databaseURL: "https://aminotaku-9238d.firebaseio.com",
+    projectId: "aminotaku-9238d",
+    storageBucket: "aminotaku-9238d.appspot.com",
+    messagingSenderId: "578340157718"
+  };
+  firebase.initializeApp(config);
+  </script>
 </head>
 <body>
-
   <!-- Formulario de Login -->
-  <div class="container-fluid inicio">
-  <!-- Slider -->
+  <div class="container-fluid" id="pantalla-login">
+    <div id="modal1" class="modal col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+      <div class="modal-content"></div>
+    </div>
+     <!-- Slider -->
     <div class="fader">
       <img class="img-responsive hidden-md hidden-lg" src="assets/images/logotipo.png" alt="logo">
       <img class="img-responsive hidden-xs hidden-sm text-center col-md-offset-2" src="assets/images/logotipo.png" alt="logo" style="width: 60%; height: 40%;">
+       <!-- Formulario de Login -->
       <form class="login">
         <h1 class="login-title">Inicia Sesión</h1>
         <p>Nombre de Usuario</p>
         <input type="text" id="login-input" autofocus>
         <p>Password</p>
         <input type="password" id="login-input">
-        <button class="btn btn-default login-button" type="button" class="login-button">Login</button>
+        <button class="btn btn-default login-button inicio-ir" type="button" id="login-button">Login</button>
         <p class="login-lost"><a href="">¿Olvidaste tu contraseña?</a></p>
         <h4 class="text-center register">¿Aún no tienes tu cuenta?</h2>
-        <button type="button" class="btn btn-lg btn-default mt-25 login-button" data-toggle="modal" data-target="#register">Registrate</button>
+        <button type="button" id="register-btn" class="btn btn-lg btn-default mt-25 login-button">Registrate</button>
+        <button type="button" class="btn btn-lg btn-default mt-25 facebook-button col-xs-offset-1 col-sm-offset-1 col-md-offset-1">Conectar vía Facebook</button>
       </form>
-      <div class="modal fade register-modal col-md-offset-3 col-xs-offset-1 col-sm-offset-1" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div id="register-modal">
-            <p>Nombre Usuario</p>
-            <input class="register-modal-input" type="text" name="username" placeholder="">
-            <p>Email</p>
-            <input class="register-modal-input" type="email" name="email" placeholder="">
-            <p>Password</p>
-            <input class="register-modal-input" type="password" name="password" placeholder="">
-            <p>Confirmar Password</p>
-            <input class="register-modal-input" type="password" name="confirmpassword" placeholder="">
-              <button class="btn btn-default login-button disabled">Crear Cuenta</button>
+    </div>
+  </div>
+
+  <!-- inicio -->
+  <section id="perfil">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars fa-2x"></i></a>
+              <ul class="dropdown-menu">
+              <li><a href="#" class="inicio-ir">Inicio</a></li>
+              <li><a href="#" class="mi-perfil-ir">Mi Perfil</a></li>
+              <li><a href="#">Mensajes</a></li>
+              <li><a href="#">Guardados</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Siguiendo</a></li>
+              <li><a href="#">Seguidores</a></li>
+              <li><a href="#">Páginas Marcadas</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Configuración</a></li>
+              <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+          </li>
+          <li>
+            <img src="assets/images/logotipo.png" alt="AminOtaku" class="logo">
+          </li>
+        </ul>
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar">
+            <button class="btn btn-default search-btn" type="button">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+      </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </section>
+
+  <div class="container vista-perfil">
+    <div class="row principal">
+      <aside class="col-md-4 profile-container col-xs-12">
+        <div class="profile">
+          <div class="row">
+            <button type="button" class="btn msg pull-left"><i class="fas fa-envelope"></i></button>
+            <button type="button" class="btn pull-right follow">Seguir</button>
+          </div>
+          <!-- info del perfil -->
+          <div class="row">
+            <div class="profile-photo">
+              <img src="assets/images/avatar-random.jpg" alt="Foto de Perfil">
+            </div>
+          </div>
+          <div class="row">
+            <a href="#" class="user-url">@Url</a>
+            <h3 class="username">User</h3>
+          </div>
+          <div class="row foll-buttons">
+            <div class="col-lg-12 text-center">
+              <button type="button" class="btn default following">Siguiendo (<span class="following-counter">0</span>)</button>
+              <button type="button" class="btn default followers">Seguidores (<span class="followers-counter">0</span>)</button>
+            </div>
+          </div>
+          <div class="row">
+            <p class="description">Descripción</p>
+            <hr>
+          </div>
+          <div class="row">
+            <ul class = "links">
+              <li><i class="fab fa-facebook fa-lg"></i><span class="facebook"> Facebook</span></li>
+              <li><i class="fab fa-instagram fa-lg"></i><span class="instagram"> Instagram</span></li>
+              <li><i class="fab fa-github-square fa-lg"></i><span class="github"> Github</span></li>
+              <hr>
+              <li><i class="fas fa-map-marker fa-lg"></i><span class="location"> location</span></li>
+              <li><i class="fas fa-calendar-alt fa-lg"></i>Se unió el <span class="joined"> joined</span></li>
+            </ul>
           </div>
         </div>
+      </aside>
+      <div class="col-md-8 col-md-offset-4 col-xs-12 div-nav">
+        <ul class="nav nav-tabs hidden-xs hidden-sm">
+          <li role="presentation" class="active all bar perfil-bar"><a href="#" class=>Actividad Reciente</a></li>
+          <li role="presentation" class="reviews bar perfil-bar"><a href="#">Reseñas</a></li>
+          <li role="presentation" class="images bar perfil-bar"><a href="#" >Imágenes</a></li>
+          <li role="presentation" class="videos bar perfil-bar"><a href="#" >Videos</a></li>
+          <li role="presentation" class="news bar perfil-bar"><a href="#" >Noticias</a></li>
+          <li role="presentation" class="miscellaneous bar perfil-bar"><a href="#">Misceláneo</a></li>
+        </ul>
+        <ul class="nav nav-pills nav-stacked hidden-lg hidden-md">
+          <li class="active all bar perfil-bar"><a href="#" class=>Actividad Reciente</a></li>
+          <li class="reviews bar perfil-bar"><a href="#">Reseñas</a></li>
+          <li class="images bar perfil-bar"><a href="#" >Imágenes</a></li>
+          <li class="videos bar perfil-bar"><a href="#" >Videos</a></li>
+          <li class="news bar perfil-bar"><a href="#" >Noticias</a></li>
+          <li class="miscellaneous bar perfil-bar"><a href="#">Misceláneo</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="col-md-8 col-md-offset-4 col-xs-12 posts">
+         <!-- ******** posteos-->
       </div>
     </div>
   </div>
 
-  <!-- Sección inicio -->
-  <section id="inicio">
-    
-  </section>
-  <!-- Perfil de usuario -->
-  <section id="perfil">
-    
-  </section>
-  <!-- Perfil otros usuarios -->
-  <section id="perfil-usuarios">
-    
-  </section>
-  <!-- Perfiles de Animes / Mangas -->
-  <section id="perfil-pagina">
-    
-  </section>
 
+  <div class="container vista-inicio">
+    <!-- row global -->
+    <div class="row">
+      <!-- column izquierda con populares y recomendados -->
+      <div class="row">
+        <div class="postea col-xs-12 text-center hidden-lg hidden-md">
+          <div class="new-post">
+            <ul class="center-block">
+              <li title="Reseña"><i class="far fa-file-alt fa-3x"></i></li>
+              <li title="Imágen"><i class="far fa-image fa-3x"></i></li>
+              <li title="Video"><i class="far fa-file-video fa-3x"></i></li>
+              <li title="Noticia"><i class="far fa-newspaper fa-3x"></i></li>
+              <li title="Misceláneo"><i class="fas fa-cubes fa-3x"></i></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="nav col-xs-12 nav-pills nav-stacked hidden-lg hidden-md">
+          <li class="active bar inicio-all side-bar"><a href="#" class=>Actividad Reciente</a></li>
+          <li class="reviews bar inicio-popular side-bar"><a href="#">Populares del día</a></li>
+          <li class="images bar inicio-recommended side-bar"><a href="#" >Recomendado para ti</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-xs-12 side oculto">
+        <div class="row side-row">
+          <ul class="nav nav-tabs doble-oculto">
+            <li role="presentation" class="active"><a href="#">Populares del día</a></li>
+          </ul>
+          <div class="popular-container">
+            <!-- ***************** -->
+          </div>
+        </div>
 
+        <div class="row side-row">
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active doble-oculto"><a href="#">Recomendados para ti</a></li>
+          </ul>
+          <div class="recommended-container">
+            <!-- ***** -->
+          </div>
+        </div>
 
+      </div> <!-- /div side -->
+      <!-- column derecha -->
+      <div class="col-md-8 col-xs-12">
+        <div class="postea row text-center hidden-xs">
+          <div class="new-post">
+            <ul class="center-block">
+              <li title="Reseña"><i class="far fa-file-alt fa-3x"></i></li>
+              <li title="Imágen"><i class="far fa-image fa-3x"></i></li>
+              <li title="Video"><i class="far fa-file-video fa-3x"></i></li>
+              <li title="Noticia"><i class="far fa-newspaper fa-3x"></i></li>
+              <li title="Misceláneo"><i class="fas fa-cubes fa-3x"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="nav nav-tabs hidden-xs hidden-sm">
+            <li role="presentation" class="active all bar"><a href="#" class=>Actividad Reciente</a></li>
+          </ul>
+          <div class="row posts">
+            <!-- ******* -->
+          </div>
+        </div>
+      </div>
+    </div> <!-- div row -->
+  </div>
 
+  <div class="container vista-perfil-propio">
+    <div class="row principal">
+      <aside class="col-md-4 profile-container col-xs-12">
+        <div class="profile">
+          <!-- info del perfil -->
+          <div class="row">
+            <div class="profile-photo">
+              <img src="assets/images/avatar-random.jpg" alt="Foto de Perfil">
+            </div>
+          </div>
+          <div class="row">
+            <a href="#" class="user-url">@Url</a>
+            <h3 class="username">User</h3>
+          </div>
+          <div class="row foll-buttons">
+            <div class="col-lg-12 text-center">
+              <button type="button" class="btn default following">Siguiendo (<span class="following-counter">0</span>)</button>
+              <button type="button" class="btn default followers">Seguidores (<span class="followers-counter">0</span>)</button>
+            </div>
+          </div>
+          <div class="row">
+            <p class="description">Descripción</p>
+            <hr>
+          </div>
+          <div class="row">
+            <ul class = "links">
+              <li><i class="fab fa-facebook fa-lg"></i><span class="facebook"> Facebook</span></li>
+              <li><i class="fab fa-instagram fa-lg"></i><span class="instagram"> Instagram</span></li>
+              <li><i class="fab fa-github-square fa-lg"></i><span class="github"> Github</span></li>
+              <hr>
+              <li><i class="fas fa-map-marker fa-lg"></i><span class="location"> location</span></li>
+              <li><i class="fas fa-calendar-alt fa-lg"></i>Se unió el <span class="joined"> joined</span></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <!-- SECCIÓN PARA POSTEAR -->
+      <div class="postea col-md-8 col-md-offset-4 col-xs-12 text-center">
+        <div class="row new-post">
+          <ul class="center-block">
+            <li title="Reseña"><i class="far fa-file-alt fa-3x"></i></li>
+            <li title="Imágen"><i class="far fa-image fa-3x"></i></li>
+            <li title="Video"><i class="far fa-file-video fa-3x"></i></li>
+            <li title="Noticia"><i class="far fa-newspaper fa-3x"></i></li>
+            <li title="Misceláneo"><i class="fas fa-cubes fa-3x"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8 col-md-offset-4 col-xs-12 div-nav">
+        <ul class="nav nav-tabs hidden-xs hidden-sm">
+          <li role="presentation" class="active all bar perfil-bar"><a href="#" class=>Actividad Reciente</a></li>
+          <li role="presentation" class="reviews bar perfil-bar"><a href="#">Reseñas</a></li>
+          <li role="presentation" class="images bar perfil-bar"><a href="#" >Imágenes</a></li>
+          <li role="presentation" class="videos bar perfil-bar"><a href="#" >Videos</a></li>
+          <li role="presentation" class="news bar perfil-bar"><a href="#" >Noticias</a></li>
+          <li role="presentation" class="miscellaneous bar perfil-bar"><a href="#">Misceláneo</a></li>
+        </ul>
+        <ul class="nav nav-pills nav-stacked hidden-lg hidden-md">
+          <li class="active all bar perfil-bar"><a href="#" class=>Actividad Reciente</a></li>
+          <li class="reviews bar perfil-bar"><a href="#">Reseñas</a></li>
+          <li class="images bar perfil-bar"><a href="#" >Imágenes</a></li>
+          <li class="videos bar perfil-bar"><a href="#" >Videos</a></li>
+          <li class="news bar perfil-bar"><a href="#" >Noticias</a></li>
+          <li class="miscellaneous bar perfil-bar"><a href="#">Misceláneo</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div class="col-md-8 col-md-offset-4 col-xs-12 posts">
+         <!-- ******** posteos-->
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/data.js"></script>
   <script src="assets/js/app.js"></script>
-
 </body>
 </html>

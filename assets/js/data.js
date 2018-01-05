@@ -18,13 +18,13 @@ var data = [
 		"avatar": "<img src='assets/images/avatar-lore.jpg'>",
 		"following": ["Helvette", "Ichi"],
 		"followers": ["Helvette", "Ichi", "Ñoña Escarlata"],
-		"description": "Nombre: Lore <br> Apodo: Aya <br> Edad: 28 ewe <br> Anime/s Favorito/s: Jojo's, FMA, SNK, Dragon Ball",
+		"description": "Nombre: Lore Apodo: Aya Edad: 28 ewe Anime/s Favorito/s: Jojo's, FMA, SNK, Dragon Ball",
 		"location": "Santiago, Chile",
 		"joined": "24 de Septiembre 2017",
 		"contact": {
-			"facebook": "https://www.facebook.com/Loleasdf",
-			"instagram": "https://www.instagram.com/ayayweas/",
-			"github": "https://github.com/lpalominosf/"
+			"facebook": "<a href='https://www.facebook.com/Loleasdf' target='_blank'></a>",
+			"instagram": "<a href='https://www.instagram.com/ayayweas/' target='_blank'></a>",
+			"github": "<a href='https://github.com/lpalominosf/' target='_blank'></a>"
 		},
 		"post": [
 			{
@@ -36,7 +36,7 @@ var data = [
 			},
 			{
 				"type": "image",
-				"image": "url",
+				"image": "<img src='assets/images/jojo-fanart.jpg'>",
 				"text": "Este fanart está hermoso ;-;",
 				"tags": ["Josuke", "JJBA", "Fanart", "Draw", "AutorName"],
 				"hour": "16:20"
@@ -44,7 +44,7 @@ var data = [
 
 			{
 				"type": "news",
-				"text": "El manga de Shingeki ya supera los 71 millones de copias ;u;! <br> link:",
+				"text": "El manga de Shingeki ya supera los 71 millones de copias ;u;!",
 				"link": "https://www.koi-nya.net/2018/01/02/manga-shingeki-no-kyojin-supera-los-71-millones-copias/",
 				"tags": ["SnK", "ShingekiNoKyojin", "Manga", "Shonen", "Anime"],
 				"hour": "17:47"
@@ -54,16 +54,16 @@ var data = [
 
 	{
 		"username": "Ichi",
-		"avatar": "url",
+		"avatar": "<img src='assets/images/avatar-liz.jpg'>",
 		"following": ["Helvette", "Lore Buccellati"],
 		"followers": ["Helvette", "Lore Buccellati"],
-		"description": "Nombre: Liss <br> Apodo: Ichi <br> Edad:28 ewe <br> Me gusta: manga, xxx, yaoi <br> Anime/s Favorito/s: Super Lovers <br> Manga/s Favorito/s: Fools",
+		"description": "Nombre: Liss, Apodo: Ichi, Edad:24, Me gusta: manga, yaoi, Anime/s Favorito/s: Super Lovers, Manga/s Favorito/s: Fools",
 		"location": "Santiago, Chile",
 		"joined": "12 de Abril, 2017",
 		"contact": {
-			"facebook": "http://www.facebook.com/",
-			"instagram": "http://www.instagram.com/",
-			"github": "http://www.github.com/dime3ichig0"
+			"facebook": "<a href='http://www.facebook.com/' target='_blank'></a>",
+			"instagram": "<a href='http://www.instagram.com/' target='_blank''></a>",
+			"github": "<a href='http://www.github.com/dime3ichig0' target='_blank'></a>"
 		},
 		"post": [
 			{
@@ -98,9 +98,9 @@ var data = [
 		"location": "Santiago, Chile",
 		"joined": "1 de Enero, 2018",
 		"contact": {
-			"facebook": "https://www.facebook.com/VToriRodriguez",
-			"instagram": "https://www.instagram.com/skepticalpony",
-			"github": "https://github.com/malditoprotozoo"
+			"facebook": "<a href='https://www.facebook.com/VToriRodriguez' target='_blank'></a>",
+			"instagram": "<a href='https://www.instagram.com/skepticalpony' target='_blank'></a>",
+			"github": "<a href='https://github.com/malditoprotozoo' target='_blank'></a>"
 		},
 		"post": [
 			{
@@ -119,7 +119,7 @@ var data = [
 			},
 			{
 				"type": "image",
-				"image":"<img src='assets/images/cowboy-bebop.jpg",
+				"image":"<img src='assets/images/cowboy-bebop.jpg'>",
 				"text": "Spike FTW",
 				"tags": ["CowboyBebop", "Anime", "sci-fi", "Screenshot"],
 				"hour": "09:13"
@@ -129,16 +129,16 @@ var data = [
 
 	{
 		"username": "Tropirai",
-		"avatar": "<img src='assets/images/avatar-tropirai.jpg",
+		"avatar": "<img src='assets/images/avatar-tropirai.jpg'>",
 		"following": ["Helvette", "Ñoña Escarlata"],
 		"followers": ["Helvette", "Ñoña Escarlata"],
-		"description": "Raimundo Lisboa Prádenas, 24 años. Videojuegos, Hardware, Neopets, Pokémon, Gatos.",
+		"description": "Raimundo Lisboa Pradenas, 24 años. Videojuegos, Hardware, Neopets, Pokémon, Gatos.",
 		"location": "Santiago, Chile",
 		"joined": "2 de Enero, 2018",
 		"contact": {
-			"facebook": "http://www.facebook.com/",
-			"instagram": "http://www.instagram.com/",
-			"github": "#"
+			"facebook": "<a href='http://www.facebook.com/' target='_blank'></a>",
+			"instagram": "<a href='http://www.instagram.com/' target='_blank'></a>",
+			"github": "<a href='#'></a>"
 		},
 		"post": [
 			{
@@ -157,7 +157,7 @@ var data = [
 			},
 			{
 				"type": "image",
-				"image": "<img src='assets/images/meme-diavolo.jpg'>",
+				"image": "<img src='assets/images/meme-tentacruel.jpg'>",
 				"text": "uwu",
 				"tags": ["Pokemon", "Tentacool", "Tentacruel", "Anime", "Funny", "Cute"],
 				"hour": "22:43"
@@ -174,9 +174,9 @@ var data = [
 		"location": "La Serena, Chile",
 		"joined": "17 de Diciembre, 2017",
 		"contact": {
-			"facebook": "#",
-			"instagram": "#",
-			"github": "#"
+			"facebook": "<a href='#'></a>",
+			"instagram": "<a href='#'></a>",
+			"github": "<a href='#'></a>"
 		},
 		"post": [
 			{
@@ -198,7 +198,7 @@ var data = [
 			{
 				"username":"Random Person",
 				"type": "image",
-				"image": "<img src='assets/images/meme-one-punch'>",
+				"image": "<img src='assets/images/meme-one-punch.jpg'>",
 				"text": "HAHAHAH omggg, nice one",
 				"tags": ["Anime", "OPM", "OnePunchMan", "Meme", "Funny"],
 				"hour": "13:18"
@@ -210,7 +210,6 @@ var data = [
 /*
 ** datos del usuario que está navegando en aminotaku, contiene la misma información que el resto de data
 */
-
 var user = {
 	"username": "Helvette",
 	"avatar": "<img src= 'assets/images/avatar-helvette.jpg'>",
@@ -221,9 +220,9 @@ var user = {
 	"location": "Santiago, Chile",
 	"joined": "18 de Octubre 2017",
 	"contact": {
-		"facebook": "http://www.facebook.com/intothev0id/",
-		"instagram": "http://www.instagram.com/ihaveahybridheart",
-		"github": "http://www.github.com/Helvette"
+		"facebook": "<a href='http://www.facebook.com/intothev0id/' target='_blank'></a>",
+		"instagram": "<a href='http://www.instagram.com/ihaveahybridheart' target='_blank'></a>",
+		"github": "<a href='http://www.github.com/Helvette' target='_blank'></a>"
 	},
 	"post": [
 		{
@@ -251,19 +250,28 @@ var user = {
 	]
 }
 
-
+/*
+** Datos de un "perfil" de página oficial
+*/
 var pages = [
  {
 	"name":"Jojo's Bizzare Adventure",
+	"tag": "JJBA",
 	"sub": "Anime, Manga",
-	"image": "<img src='assets/images/jojo-bizarre-adventure'>",
+	"image": "<img src='assets/images/jojo-bizarre-adventure.jpg'>",
 	"created":"Hirohiko Araki",
 	"categories": ["Shonen", "Seinen", "Sobrenatural"]
+ },
+ {
+	"name":"Random Anime",
+	"sub": "Anime, Manga",
+	"image": "<img src='assets/images/one-piece.png'>",
+	"created":"Eiichiro Oda",
+	"categories": ["Shonen"]
  }
 ]
 
-/*
-for (var i = 0; i < data.length; i++){
+/* for (var i = 0; i < data.length; i++){
 	console.log(data[i].username);
 	console.log(data[i].avatar);
 	console.log(data[i].following);
@@ -278,44 +286,8 @@ for (var i = 0; i < data.length; i++){
 	console.log(data[i].joined);
 	console.log(data[i].contact);
 	console.log(data[i].post);
+	$(".username").text(data[i].username)
 }
-
-
-funciones para armar c/post
-
-var review = function(post){
-
-}
-
-var image = function(post){
-
-}
-
-var video = function(post){
-
-}
-
-var news = function(post){
-
-}
-
-var miscellaneous = function(post){
-
-}
-
-
-for (var j = 0; j < data.length; j++){
-	for(var k = 0; k < data[j].post.length; k++){
-		console.log(data[j].post[k]); //muestra los datos de cada post
-		console.log(data[j].post[k].type);
-		console.log(data[j].post[k].text);
-		console.log(data[j].post[k].tags);
-		console.log(data[j].post[k].hour);
-	}
-} 
-
-*/
-
 
 /*
 ** Datos para la sección de populares del día
@@ -326,6 +298,8 @@ var popular = [
 		"type": "review",
 		"rating": "4/5",
 		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis explicabo temporibus eligendi vero eius sed quidem rem error sunt cupiditate magni enim quas necessitatibus iure facere, totam unde, possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illo illum laborum molestiae minus voluptate nobis nihil fugiat, sit aut hic eaque quisquam obcaecati sapiente est, saepe aperiam dolores explicabo!",
+		"page":"Random Anime",
+		"image": "<img src='assets/images/one-piece.png'>",
 		"tags": ["HxH", "HunterxHunter", "Anime"],
 		"hour": "11:00"
 	},
@@ -334,14 +308,16 @@ var popular = [
 		"type": "image",
 		"image": "<img src='assets/images/oyasumipunpun.jpg'>",
 		"text": "I love it!",
+		"page":"Random Anime",
 		"tags": ["Manga", "OPP", "OyasumiPunpun", "InioAsano", "Fanart"],
 		"hour": "13:05"
 	},
 	{
 		"username":"Random Person",
 		"type": "image",
-		"image": "<img src='assets/images/meme-one-punch'>",
+		"image": "<img src='assets/images/meme-one-punch.jpg'>",
 		"text": "HAHAHAH omggg, nice one",
+		"page":"Random Anime",
 		"tags": ["Anime", "OPM", "OnePunchMan", "Meme", "Funny"],
 		"hour": "13:18"
 	}
@@ -350,30 +326,35 @@ var popular = [
 /*
 ** Datos para los recomendados según tus gustos
 */
-var recomendados = [
+var recommended = [
 	{
-		"user": "User Random",
+		"username": "User Random",
 		"type": "image",
 		"image": "<img src='assets/images/the-lady-and-her-butler.jpg'>",
 		"text": "I love this new josei manhwa :)!",
+		"page":"Random Anime",
 		"tags": ["TLAHB", "TheLadyAndHerButler", "Manga", "Manhwa", "Josei", "Jade"],
 		"hour": "16:58"
 	},
 
 	{
-		"user": "Random Person",
+		"username": "Random Person",
 		"type": "review",
 		"rating": "2/5",
 		"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, fuga, asperiores. Placeat pariatur, aspernatur ullam tempore repellendus tempora assumenda recusandae tenetur sunt quos a doloribus explicabo inventore, voluptatem accusamus aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nihil atque ducimus debitis nulla expedita pariatur. Dolorem vero repudiandae, delectus incidunt tenetur dolores fuga, reiciendis, magnam iusto voluptatum assumenda natus.",
+		"page":"Random Anime",
+		"image": "<img src='assets/images/one-piece.png'>",
 		"tags": ["SAO", "SwordArtOnline", "Anime", "Garbage", "Fanservice"],
 		"hour": "18:30"
 	},
 	{
 
-		"type": "Random User",
-		"image": "<img src='assets/images/serial-experiment-lain.jpg'>",
+		"username": "Random User",
+		"type": "image",
+		"image": "<img src='assets/images/serial-experiments-lain.jpg'>",
 		"text": "This anime is really awesome.",
+		"page":"Random Anime",
 		"tags": ["SerialExperimentLain", "Anime", "Indie", "Old", "Philosophy"],
 		"hour": "18:52"
 	}
-]
+];

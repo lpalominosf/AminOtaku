@@ -1,6 +1,7 @@
 /*#ca06e7 hover*/
-
-
+body{
+  background-color: #ededed;
+}
 /*Formulario*/
 .login{
   margin: 20px auto;
@@ -85,49 +86,557 @@ h1.login-title{
   margin-top: 20%;
 }
 
-.register-modal{
+/*Modal de registro*/
+#modal1{
   background-color: #fff;
-  width: 50%;
+  width: 60%;
   height: 80%;
   margin-top: 5%;
   border: 1px solid #ca06e7;
   border-radius: 15px;
 }
 
-.register-modal
-input[type=password],
-input[type=email],
-input[type=text]{
-  height: 30px;
+/*Botón de crear cuenta*/
+.create-btn{
+  width: 50%;
+  height: 45px;
+  padding: 0;
   font-size: 18px;
-  width: 100%;
-  margin-bottom: 5%;
-  -webkit-appearance: none;
+  color: #fff;
+  text-align: center;
+  background: #ca06e7;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline:0;
+}
+
+/*Input del modal register*/
+.register-modal-input{
+  width: 80%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left:10px;
+  font-size: 15px;
   background: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  padding: 0 .5em;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/*Borde del input, cambia de color al clickear*/
+.register-modal-input:focus{
+  border-color: #ca06e7;
+  outline: none;
+}
+
+/*Botón para cerrar el modal*/
+.close{
+  margin-right: 5%;
+  margin-top: 4%;
+}
+
+.user{
+  padding-top: 5%;
+}
+
+/*Login with Facebook*/
+.facebook-button{
+  background: #4a369c;
+  width: 80%;
+  height: 50px;
+  padding: 0;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline:0;
+  margin-top: 5%;
 }
 
 /*Slider*/
 .fader{
   position: absolute;
-  height: 100%;
+  height: auto;
   width: 100%;
+  max-width: 100%;
   left: 0;
   top: 0;
   z-index: -99;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/*Barra de navegación*/
+.navbar{
+  background: #3d4249;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+  color: #fff;
+  background-color: #adadad;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #bfb9b9;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+  color: #eaeaea;
+  background-color: #afacac;
+  background-color: #ca06e7;
+}
+
+.form-control:focus{
+  border-color: #ca06e7;
+  outline: none;
+}
+
+.navbar-nav>li>a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+}
 
 @media only screen and (max-width: 500px) {
   .register-modal{
   background-color: #fff;
   width: 80%;
-  height: 60%;
+  height: 50%;
   margin-top: 120px;
   }
+  .fader{
+  position: absolute;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -99;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.create-btn{
+  width: 60%;
+  height: 50px;
+  padding: 0;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background: #ca06e7;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline:0;
+}
+.brand-nav{
+  width: 20%;
+  margin-top: -16%;
+}
+.form-control{
+  width: 80%;
+}
+.search-btn{
+  margin-top: -15%;
+  margin-left: 80%;
+}
 }
 
+.row {
+  margin: 0;
+}
+
+/*contenedor global*/
+.principal {
+  position: relative;
+  height: 100%;
+}
+
+/* aside perfil */
+.profile-container {
+  position: absolute;
+  margin-top: 40px;
+  top: 0;
+  bottom: 0;
+}
+
+.profile {
+  margin: 0 30px 0 0;
+  background-color: white;
+  min-height: 100vh;
+  height: 100%;
+}
+
+aside {
+  text-align: center;
+}
+
+.profile {
+  padding: 5px;
+}
+
+.profile-photo {
+  margin: 10px auto;
+  width: 240px;
+  height: 240px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.profile button {
+  color: white;
+  background-color: #ca06e7;
+}
+
+aside img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+aside h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #060606;
+}
+
+
+aside hr {
+  border: .5px solid #CFCFCF;
+  margin-bottom: 20px;
+}
+
+aside p {
+  color: #060606;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+aside a {
+  text-decoration: none;
+  color: #7D7D7B;
+}
+
+.profile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links {
+  text-align: left;
+}
+
+.profile ul li {
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 15px;
+  color: #383838;
+}
+
+.profile ul li a {
+  color: #ca06e7;
+}
+
+.profile .fa-lg {
+  margin-right: 10px;
+}
+
+.profile p {
+  margin: 10px 0;
+}
+
+.foll-buttons {
+  margin: 10px 0;
+}
+
+.following, .followers {
+  margin: 5px;
+}
+
+
+.profile button:hover, .profile button:active {
+  color: white;
+  opacity: 0.8;
+}
+
+/* NUEVA PUBLICACIÓN */
+
+.postea {
+  padding: 0;
+  height: auto;
+}
+
+.new-post {
+  margin-top: 40px;
+  margin: 40px 20px 0 20px;
+  background-color: white;
+  box-shadow: 0 13px 20px #ccc;
+}
+
+.postea ul {
+  list-style: none;
+  padding: 35px 20px;
+
+}
+
+.postea ul li {
+  display: inline-block;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  line-height: 100px;
+  border: 2px solid #ca06e7;
+  margin: 5px 10px;
+  background-color: #ca06e7;
+  color: white;
+  box-shadow: 0px 5px 12px #ccc;
+}
+
+.postea ul li:hover {
+  border: 2px solid white;
+  cursor: pointer;
+  box-shadow: 0px 7px 12px #ccc;
+}
+
+/* navegación filtrada de post */
+.div-nav {
+  margin-top: 40px;
+  padding: 0;
+}
+
+ul.nav.nav-tabs {
+ margin: 0 20px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus {
+  color: #43034c;
+  background-color: white;
+}
+
+.nav-pills>li>a:hover, ul.nav.nav-tabs>li>a:hover {
+  color: #6b047a;
+}
+
+/* POST */
+/* contenedor de todos los posteos */
+.posts {
+  height: auto;
+  padding: 0;
+}
+
+/* contenedor de un post */
+.post-container {
+  margin: 0 20px 40px 20px;
+  padding: 25px 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-top: 0;
+  box-shadow: 0 13px 20px #ccc;
+}
+
+.img-post img {
+  width: 100%;
+}
+
+.user-post, .page-post {
+  font-weight: bold;
+}
+
+.p-hour {
+  text-align: right;
+  font-size: 12px;
+}
+
+.hour {
+  font-size: 12px;
+  color: grey;
+}
+
+.like-and-unlike {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.like-and-unlike li, .save-and-share li {
+  display: inline-block;
+}
+
+.save-and-share {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.image .img, .video .img {
+  text-align: center;
+}
+
+.image img, .video img {
+  max-width: 100%;
+}
+
+a {
+  color: #ca06e7;
+}
+
+.user-post:hover, .page-post:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.post-content, .title-post {
+  margin: 15px 0;
+  line-height: 1.7;
+}
+
+.new .post-content {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tags {
+  margin: 15px 0;
+}
+
+.tags a::before {
+  content: "#";
+}
+
+.tags a {
+  margin: 0 6px;
+}
+
+.icons li {
+  margin: 0 10px;
+  color: grey;
+}
+
+.icons .fa-lg:hover {
+  color: #ca06e7;
+  cursor: pointer;
+}
+
+.icons .counter {
+  margin: 0 12px;
+}
+
+/* popular y recomendados */
+.side {
+  padding: 0;
+}
+
+.side div {
+  padding: 5px;
+  margin: 0;
+}
+
+.popular-container, .recommended-container {
+  padding: 0;
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  border-top: 0;
+  box-shadow: 0 13px 20px #ccc;
+    background-color: white;
+}
+
+.side .imagen, .side .reseña {
+  margin: 0;
+}
+.popular-container hr, .recommended-container hr {
+  margin: 0;
+}
+
+.side button {
+  margin-left: 15px;
+}
+
+.side-row {
+  margin: 20px 0;
+}
+
+.postea.row {
+  margin-bottom: 40px;
+}
+
+.nav-pills>li.active>a:hover {
+  color: #43034c;
+  background-color: white;
+}
+
+.vista-perfil, .vista-inicio, .vista-perfil-propio {
+ display: none;
+ margin-top: 60px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-left: 15px;
+}
+
+a.dropdown-toggle {
+  margin-top: 0 !important;
+}
+
+/* mediqueries */
+@media (min-width:992px) {
+  .vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0;
+  }
+  .post-container {
+    margin: 0 5px 40px 5px;
+    padding: 10px 0;
+  }
+  ul.nav.nav-tabs, ul.nav.nav-pills {
+  margin: 0 5px 15px 5px;
+  }
+  .side ul.nav.nav-tabs {
+    margin: 0 5px;
+  }
+  .profile-container {
+    padding: 0 5px;
+    position: relative;
+    height: auto;
+  }
+
+  .profile {
+    margin: 0;
+  }
+
+  .postea {
+    margin: 0 5px;
+  }
+
+  .oculto {
+  display: none;
+  }
+}
