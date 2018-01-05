@@ -468,7 +468,34 @@ $(".mi-perfil-ir").click(function(){
   $(".vista-inicio").hide();
   $(".vista-perfil").hide();
   $(".vista-perfil-propio").show();
-  alert("mskla")
+  $(".posts").empty();
+  $(".username").text(user.username);
+  $(".profile-photo").html(user.avatar);
+  $(".following-counter").text(user.following.length);
+  $(".followers-counter").text(user.followers.length);
+  $(".description").text(user.description);
+  $(".facebook").wrap(user.contact["facebook"]);
+  $(".instagram").wrap(user.contact["instagram"]);
+  $(".github").wrap(user.contact["github"]);
+  $(".location").text(user.location);
+  $(".joined").text(user.joined);
+  for (var i = 0 ; i < user["post"].length ; i++){
+    if(user["post"][i].type == "image") {
+      image(user.username, user["post"][i]);
+    }
+    if(user["post"][i].type == "review") {
+      review(user.username, user["post"][i]);
+    }
+    if(user["post"][i].type == "video") {
+      video(user.username, user["post"][i]);
+    }
+    if(user["post"][i].type == "news") {
+      news(user.username, user["post"][i]);
+    }
+    if(user["post"][i].type == "miscellaneous") {
+      miscellaneous(user.username, user["post"][i]);
+    }
+  }
 })
 
 /*
