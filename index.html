@@ -55,7 +55,7 @@
 
   <!-- inicio -->
   <section id="perfil">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top hidden-xs hidden-sm">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -86,7 +86,7 @@
         </ul>
         <form class="navbar-form navbar-right">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Buscar">
+            <input type="text" class="form-control" id="input-editar" placeholder="Buscar animes, mangas, personas, tags...">
             <button class="btn btn-default search-btn" type="button">
               <i class="glyphicon glyphicon-search"></i>
             </button>
@@ -95,6 +95,28 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+  <nav class="nav-mobile hidden-md hidden-lg text-center">
+    <ul>
+      <li class="bars-menu" id="bars-menu"><i class="fas fa-bars fa-2x"></i></li>
+      <li><img src="assets/images/logotipo.png" alt="AminOtaku"></li>
+      <li><i class="fas fa-search fa-2x"></i></li>
+    </ul>
+  </nav>
+  <div class="bars-child not-show" id="bars-child">
+    <ul>
+      <li class="inicio-ir">Inicio</li>
+      <li class="mi-perfil-ir">Mi Perfil</li>
+      <li>Mensajes</li>
+      <li>Guardados</li>
+      <li role="separator" class="divider"></li>
+      <li>Siguiendo</li>
+      <li>Seguidores</li>
+      <li>Páginas Marcadas</li>
+      <li><li role="separator" class="divider"></li></li>
+      <li>Configuración</li>
+      <li>Cerrar Sesión</li>
+    </ul>
+  </div>
   </section>
 
   <div class="container vista-perfil">
@@ -118,7 +140,7 @@
           <div class="row foll-buttons">
             <div class="col-lg-12 text-center">
               <button type="button" class="btn default following">Siguiendo (<span class="following-counter">0</span>)</button>
-              <button type="button" class="btn default followers">Seguidores (<span class="followers-counter">0</span>)</button>
+              <button type="button" class="btn default followers">Seguidores (<span class="followers-counter fC">0</span>)</button>
             </div>
           </div>
           <div class="row">
@@ -179,7 +201,7 @@
             </ul>
           </div>
         </div>
-        <ul class="nav col-xs-12 nav-pills nav-stacked hidden-lg hidden-md">
+        <ul class="nav col-xs-12 nav-pills nav-stacked hidden-lg hidden-md" id="filter">
           <li class="active bar inicio-all side-bar"><a href="#" class=>Actividad Reciente</a></li>
           <li class="reviews bar inicio-popular side-bar"><a href="#">Populares del día</a></li>
           <li class="images bar inicio-recommended side-bar"><a href="#" >Recomendado para ti</a></li>
@@ -207,7 +229,7 @@
       </div> <!-- /div side -->
       <!-- column derecha -->
       <div class="col-md-8 col-xs-12">
-        <div class="postea row text-center hidden-xs">
+        <div class="postea row text-center hidden-xs hidden-sm">
           <div class="new-post">
             <ul class="center-block">
               <li title="Reseña"><i class="far fa-file-alt fa-3x"></i></li>

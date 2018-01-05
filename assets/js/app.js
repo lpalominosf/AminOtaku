@@ -3,12 +3,18 @@ $(document).ready(function(){
   *Escondo la segunda pantalla, al cargar la vista principal
   */
   $('#perfil').hide();
-
-  $('#login-button').click(function(){
+  $('#login-button').click(function(e){
   $('#perfil').show();
   $('#pantalla-login').hide();
   $(".vista-inicio").show();
+  e.preventDefault();
   });
+  var menu = document.getElementById("bars-menu");
+  var hideMenu = document.getElementById("bars-child");
+ menu.addEventListener("click", function(){
+  hideMenu.classList.toggle("not-show");
+  hideMenu.style.transitionDelay = "2s"
+});
   /*
   *Fondo animado
   */
@@ -364,6 +370,7 @@ var miscellaneous = function(username, post){
 ** click en inicio
 */
 $(".inicio-ir").click(function(){
+  $("bars-child").hide();
   $(".vista-perfil").hide();
   $(".vista-perfil-propio").hide();
   $(".vista-inicio").show();
@@ -465,6 +472,7 @@ $(".inicio-ir").click(function(){
 ** click en mi-perfil
 */
 $(".mi-perfil-ir").click(function(){
+  $(".bars-child").hide();
   $(".vista-inicio").hide();
   $(".vista-perfil").hide();
   $(".vista-perfil-propio").show();
@@ -560,15 +568,13 @@ $(".perfil-bar").click(function(){
     var username = $(row[2]).children();
     username = username[1];
     username = $(username).text();
-    // si el botón es seguido tiene que cambiar el texto a seguir
-    // los seguidores de ese perfil tienen que disminuir 1
-    // se tiene que borrar de la data
    if ($(this).text() == "Seguido") {
     $(this).text("Seguir");
-    var counter = $(".followers-counter").text();
-    counter = parseInt(counter);
-    counter = counter - 1;
-    $(".followers-counter").text(counter);
+    var contador = $(".fC").text();
+    console.log(contador);
+    contador = parseInt(contador) * 1;
+    contador = contador - 1;
+    $(".followers-counter").text(contador);
     for(var i = 0 ; i < user["following"].length ; i++){
       if (username == user["following"][i]) {
         user["following"].splice(i, 1);
@@ -577,10 +583,10 @@ $(".perfil-bar").click(function(){
    }else{
     $(this).text("Seguir");
     $(this).text("Seguido");
-    var counter = $(".followers-counter").text();
-    counter = parseInt(counter);
-    counter = counter + 1;
-    $(".followers-counter").text(counter);
+    var contador = $(".fC").text();
+    contador = parseInt(contador) * 1;
+    contador = contador + 1;
+    $(".followers-counter").text(contador);
     user["following"].push(username);
     }
   })

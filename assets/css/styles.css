@@ -1,6 +1,8 @@
 /*#ca06e7 hover*/
 body{
   background-color: #ededed;
+  margin: 0;
+  padding: 0;
 }
 /*Formulario*/
 .login{
@@ -597,6 +599,65 @@ a.dropdown-toggle {
   margin-top: 0 !important;
 }
 
+#input-editar {
+  width: 300px;
+}
+.nav-mobile {
+  background-color: #3D4249;
+  height: 50px;
+  color: white;
+}
+#section {
+  margin-top: 0;
+}
+
+.nav-mobile img {
+  height: 50px;
+  margin: 0 30px;
+}
+
+.bars-child ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 10px 20px 0 10px;
+}
+
+.bars-child li {
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: 1px solid white;
+}
+
+.nav-mobile ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-mobile li {
+   display: inline-block;
+}
+
+.nav-mobile .fa-2x {
+  padding-top: 10px;
+}
+
+nav.col-xs-12.nav-pills.nav-stacked.hidden-lg.hidden-md {
+  padding: 0 5px;
+}
+.bars-menu {
+  display: inline-block;
+  opacity: 1;
+}
+.bars-child {
+  background-color: #3D4249;
+  color: white;
+}
+
+.not-show {
+  display: none;
+}
+
 /* mediqueries */
 @media (min-width:992px) {
   .vertical-align {
@@ -616,7 +677,7 @@ a.dropdown-toggle {
     margin: 0 5px 40px 5px;
     padding: 10px 0;
   }
-  ul.nav.nav-tabs, ul.nav.nav-pills {
+  ul.nav.nav-tabs, {
   margin: 0 5px 15px 5px;
   }
   .side ul.nav.nav-tabs {
@@ -632,11 +693,28 @@ a.dropdown-toggle {
     margin: 0;
   }
 
+  .new-post {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .postea ul {
+    padding: 30px 10px;
+  }
+
   .postea {
-    margin: 0 5px;
+    padding: 0 5px;
+  }
+
+  #filter {
+    padding: 0 5px;
   }
 
   .oculto {
   display: none;
   }
+  nav.col-xs-12.nav-pills.nav-stacked.hidden-lg.hidden-md {
+  padding: 0 5px;
+}
 }
